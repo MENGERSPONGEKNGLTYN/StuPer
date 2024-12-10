@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- Конфигурация для JSP -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <display-name>StuPer</display-name>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.rip_rip.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.rip_rip.RegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddStudentProfileServlet</servlet-name>
+        <servlet-class>com.rip_rip.AddStudentProfileServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddStudentProfileServlet</servlet-name>
+        <url-pattern>/AddStudentProfileServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddTeacherProfileServlet</servlet-name>
+        <servlet-class>com.rip_rip.AddTeacherProfileServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddTeacherProfileServlet</servlet-name>
+        <url-pattern>/AddTeacherProfileServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditStudentProfileServlet</servlet-name>
+        <servlet-class>com.rip_rip.EditStudentProfileServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EditStudentProfileServlet</servlet-name>
+        <url-pattern>/EditStudentProfileServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditTeacherProfileServlet</servlet-name>
+        <servlet-class>com.rip_rip.EditTeacherProfileServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EditTeacherProfileServlet</servlet-name>
+        <url-pattern>/EditTeacherProfileServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DiaryServlet</servlet-name>
+        <servlet-class>com.rip_rip.DiaryServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DiaryServlet</servlet-name>
+        <url-pattern>/DiaryServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GradeBookServlet</servlet-name>
+        <servlet-class>com.rip_rip.GradeBookServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GradeBookServlet</servlet-name>
+        <url-pattern>/GradeBookServlet</url-pattern>
+    </servlet-mapping>
+
+    <listener>
+        <listener-class>com.rip_rip.SessionTrackingListener</listener-class>
+    </listener>
+
+    <filter>
+        <filter-name>CSPFilter</filter-name>
+        <filter-class>com.rip_rip.filters.CSPFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>CSPFilter</filter-name>
+        <url-pattern>/CSPFilter</url-pattern>
+    </filter-mapping>
+
+
+</web-app>
