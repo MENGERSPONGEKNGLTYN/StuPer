@@ -35,14 +35,14 @@ The project is organized as follows:
 │       └───java
 │           └───com
 │               └───rip_rip
-│                   │   AddStudentProfileServlet.java
-│                   │   AddTeacherProfileServlet.java
-│                   │   DatabaseHelper.java
-│                   │   DiaryServlet.java
-│                   │   EditStudentProfileServlet.java
-│                   │   EditTeacherProfileServlet.java
-│                   │   LoginServlet.java
-│                   │   RegisterServlet.java
+│                       AddStudentProfileServlet.java
+│                       AddTeacherProfileServlet.java
+│                       DatabaseHelper.java
+│                       DiaryServlet.java
+│                       EditStudentProfileServlet.java
+│                       EditTeacherProfileServlet.java
+│                       LoginServlet.java
+│                       RegisterServlet.java
 │
 └───web
     │   admin.jsp
