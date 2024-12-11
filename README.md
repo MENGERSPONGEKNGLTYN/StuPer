@@ -256,7 +256,3 @@ Stores detailed information about teachers.
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request with detailed descriptions of your changes.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
